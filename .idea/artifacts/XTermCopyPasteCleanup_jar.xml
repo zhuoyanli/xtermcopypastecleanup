@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="XTermCopyPasteCleanup:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ExecutableJars</output-path>
+    <root id="archive" name="XTermCopyPasteCleanup.jar">
+      <element id="module-output" name="XTermCopyPasteCleanup" />
+    </root>
+  </artifact>
+</component>
