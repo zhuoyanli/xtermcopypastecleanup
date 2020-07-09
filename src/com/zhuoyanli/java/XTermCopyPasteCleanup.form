@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.zhuoyanli.java.XTermCopyPasteCleanup">
+  <grid id="27dc6" binding="paneMain" layout-manager="GridBagLayout">
+    <constraints>
+      <xy x="20" y="20" width="824" height="700"/>
+    </constraints>
+    <properties>
+      <maximumSize width="-1" height="-1"/>
+      <minimumSize width="548" height="400"/>
+      <opaque value="false"/>
+      <preferredSize width="760" height="500"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="c9ecb" binding="paneTextInput" layout-manager="GridBagLayout">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="true"/>
+          <gridbag weightx="1.0" weighty="0.9" ipadx="1" ipady="1"/>
+        </constraints>
+        <properties>
+          <maximumSize width="-1" height="-1"/>
+          <minimumSize width="-1" height="-1"/>
+          <preferredSize width="-1" height="-1"/>
+        </properties>
+        <border type="etched"/>
+        <children>
+          <component id="db189" class="javax.swing.JTextArea" binding="taInput">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="1.0" weighty="0.45"/>
+            </constraints>
+            <properties>
+              <font name="Consolas"/>
+              <inheritsPopupMenu value="true"/>
+              <lineWrap value="true"/>
+              <margin top="1" left="1" bottom="0" right="0"/>
+            </properties>
+          </component>
+          <component id="f7666" class="javax.swing.JLabel" binding="lblInput">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="1.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <focusable value="false"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <labelFor value="db189"/>
+              <requestFocusEnabled value="true"/>
+              <text value="Input Text Below"/>
+            </properties>
+          </component>
+          <component id="8a4f8" class="javax.swing.JTextArea" binding="taOutput">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="50"/>
+              </grid>
+              <gridbag weightx="1.0" weighty="0.45"/>
+            </constraints>
+            <properties>
+              <editable value="true"/>
+              <font name="Consolas"/>
+              <lineWrap value="true"/>
+            </properties>
+          </component>
+          <component id="eb513" class="javax.swing.JLabel" binding="lblOutput">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="1.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <labelFor value="8a4f8"/>
+              <text value="Cleaned-up Output "/>
+            </properties>
+          </component>
+          <grid id="690e6" binding="paneOptions" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="1.0" weighty="0.05"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="ccf39" class="javax.swing.JCheckBox" binding="chkboxRmTrailingSlashes">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Remove Trailing Slashes"/>
+                </properties>
+              </component>
+              <hspacer id="45e39">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="9a04f" binding="paneBtn" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="0.1"/>
+        </constraints>
+        <properties>
+          <maximumSize width="-1" height="-1"/>
+          <minimumSize width="-1" height="-1"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="a2e0a" class="javax.swing.JButton" binding="btnCleanup">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Cleanup"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
