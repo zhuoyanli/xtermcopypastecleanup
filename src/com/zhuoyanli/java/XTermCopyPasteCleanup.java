@@ -113,7 +113,7 @@ public class XTermCopyPasteCleanup {
                 sb.append(line);
             }else {
                 if(line.endsWith("\\")) {
-                    sb.append(line.substring(0, line.length()-2));
+                    sb.append(line.substring(0, line.length()-1));
                 } else {
                     sb.append(line);
                 }
