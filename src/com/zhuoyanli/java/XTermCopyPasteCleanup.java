@@ -10,13 +10,15 @@ public class XTermCopyPasteCleanup {
     private JPanel paneMain;
     private JButton btnCleanup;
     private JTextArea taInput;
-    private JPanel paneTextInput;
+    private JPanel paneText;
     private JPanel paneBtn;
     private JLabel lblInput;
     private JTextArea taOutput;
     private JLabel lblOutput;
     private JPanel paneOptions;
     private JCheckBox chkboxRmTrailingSlashes;
+    private JScrollPane scrpaneInput;
+    private JScrollPane scrpaneOutput;
     private final CtxMenuEdit popupMenuInput;
     private final CtxMenuEditActionListener ctxMenuInputActionListener;
     private final CtxMenuEditActionListener ctxMenuOutputActionListener;
@@ -56,12 +58,14 @@ public class XTermCopyPasteCleanup {
                 // the 'paste' MenuItem
                 // Paste content from Clipboard into TA
                 if(ta.isEditable()) {
+                    ta.setText(null);
                     ta.paste();
                 }
             }else if(idxMi == CtxMenuEdit.MENUITEM_IDX_PASTECLEANUPCOPY) {
                 // the 'paste&cleanup&copy' MenuItem
                 // Paste content from Clipboard into TA
                 if(ta.isEditable()) {
+                    ta.setText(null);
                     ta.paste();
                     // Clean-up
                     cleanUpInputTAtoOutputTA(taInput, taOutput);
