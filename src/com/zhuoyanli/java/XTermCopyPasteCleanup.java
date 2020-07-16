@@ -19,6 +19,7 @@ public class XTermCopyPasteCleanup {
     private JCheckBox chkboxRmTrailingSlashes;
     private JScrollPane scrpaneInput;
     private JScrollPane scrpaneOutput;
+    private JPanel paneIntro;
     private final CtxMenuEdit popupMenuInput;
     private final CtxMenuEditActionListener ctxMenuInputActionListener;
     private final CtxMenuEditActionListener ctxMenuOutputActionListener;
